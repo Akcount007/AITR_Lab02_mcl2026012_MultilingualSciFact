@@ -1,0 +1,189 @@
+{
+  "corpus": {
+    "total_documents": 5183,
+    "structured_abstracts": 977,
+    "unstructured_abstracts": 4206,
+    "abstract_sentence_count": {
+      "min": 3,
+      "max": 367,
+      "mean": 8.87,
+      "median": 8
+    },
+    "abstract_word_count": {
+      "count": 5183,
+      "word_count_min": 26,
+      "word_count_max": 1524,
+      "word_count_mean": 201.81,
+      "word_count_median": 192,
+      "word_count_stdev": 86.01
+    },
+    "title_word_count": {
+      "count": 5183,
+      "word_count_min": 1,
+      "word_count_max": 40,
+      "word_count_mean": 12.82,
+      "word_count_median": 12,
+      "word_count_stdev": 4.73
+    }
+  },
+  "splits": {
+    "train": {
+      "claims_count": 809,
+      "claim_length": {
+        "count": 809,
+        "word_count_min": 3,
+        "word_count_max": 39,
+        "word_count_mean": 12.33,
+        "word_count_median": 12,
+        "word_count_stdev": 4.66
+      }
+    },
+    "dev": {
+      "claims_count": 300,
+      "claim_length": {
+        "count": 300,
+        "word_count_min": 4,
+        "word_count_max": 29,
+        "word_count_mean": 12.51,
+        "word_count_median": 12.0,
+        "word_count_stdev": 5.14
+      }
+    },
+    "test": {
+      "claims_count": 300,
+      "claim_length": {
+        "count": 300,
+        "word_count_min": 4,
+        "word_count_max": 39,
+        "word_count_mean": 12.06,
+        "word_count_median": 12.0,
+        "word_count_stdev": 4.56
+      }
+    },
+    "total_claims": 1409
+  },
+  "labels": {
+    "train": {
+      "total_claims": 809,
+      "claims_with_evidence": 505,
+      "claims_without_evidence_NEI": 304,
+      "claim_level_counts": {
+        "NOT_ENOUGH_INFO": 304,
+        "CONTRADICT": 173,
+        "SUPPORT": 332
+      },
+      "claim_level_percentages": {
+        "NOT_ENOUGH_INFO": 37.58,
+        "CONTRADICT": 21.38,
+        "SUPPORT": 41.04
+      },
+      "instance_level_counts": {
+        "NOT_ENOUGH_INFO": 355,
+        "CONTRADICT": 341,
+        "SUPPORT": 616
+      },
+      "instance_level_percentages": {
+        "NOT_ENOUGH_INFO": 27.06,
+        "CONTRADICT": 25.99,
+        "SUPPORT": 46.95
+      },
+      "rationale_sentence_count": {
+        "min": 1,
+        "max": 4,
+        "mean": 1.07,
+        "median": 1
+      },
+      "cited_doc_ids_per_claim": {
+        "min": 1,
+        "max": 5,
+        "mean": 1.14
+      }
+    },
+    "dev": {
+      "total_claims": 300,
+      "claims_with_evidence": 188,
+      "claims_without_evidence_NEI": 112,
+      "claim_level_counts": {
+        "NOT_ENOUGH_INFO": 112,
+        "SUPPORT": 124,
+        "CONTRADICT": 64
+      },
+      "claim_level_percentages": {
+        "NOT_ENOUGH_INFO": 37.33,
+        "SUPPORT": 41.33,
+        "CONTRADICT": 21.33
+      },
+      "instance_level_counts": {
+        "NOT_ENOUGH_INFO": 131,
+        "SUPPORT": 216,
+        "CONTRADICT": 122
+      },
+      "instance_level_percentages": {
+        "NOT_ENOUGH_INFO": 27.93,
+        "SUPPORT": 46.06,
+        "CONTRADICT": 26.01
+      },
+      "rationale_sentence_count": {
+        "min": 1,
+        "max": 3,
+        "mean": 1.08,
+        "median": 1.0
+      },
+      "cited_doc_ids_per_claim": {
+        "min": 1,
+        "max": 5,
+        "mean": 1.13
+      }
+    },
+    "test": {
+      "status": "UNAVAILABLE / HIDDEN",
+      "notes": "Test split contains only 'id' and 'claim'. Labels and rationales held by official leaderboard."
+    }
+  },
+  "missing_values": {
+    "corpus": {
+      "missing_doc_id": 0,
+      "missing_title": 0,
+      "empty_abstract": 0
+    },
+    "train": {
+      "missing_id": 0,
+      "empty_claim_text": 0,
+      "missing_cited_doc_ids": 0,
+      "cited_docs_not_in_corpus": 0
+    },
+    "dev": {
+      "missing_id": 0,
+      "empty_claim_text": 0,
+      "missing_cited_doc_ids": 0,
+      "cited_docs_not_in_corpus": 0
+    },
+    "test": {
+      "missing_id": 0,
+      "empty_claim_text": 0,
+      "evidence_leaked_in_test": 0,
+      "cited_doc_ids_leaked_in_test": 0
+    }
+  },
+  "duplicates": {
+    "unique_corpus_doc_ids": true,
+    "within_split_duplicates": {
+      "train_id_duplicates": 0,
+      "dev_id_duplicates": 0,
+      "test_id_duplicates": 0,
+      "train_text_duplicates": 2,
+      "dev_text_duplicates": 0,
+      "test_text_duplicates": 3
+    },
+    "cross_split_id_overlap": {
+      "train_dev_overlap": 0,
+      "train_test_overlap": 0,
+      "dev_test_overlap": 0
+    },
+    "cross_split_text_overlap": {
+      "train_dev_overlap": 2,
+      "train_test_overlap": 1,
+      "dev_test_overlap": 0
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "input_file": "C:\\Users\\akema\\.gemini\\antigravity\\scratch\\AITR_Lab02_mcl2026012_MultilingualSciFact\\data\\claims_dev.jsonl",
+  "output_file": "data/claims_dev_multilingual_pilot.jsonl",
+  "total_claims": 10,
+  "languages": [
+    "es",
+    "hi"
+  ],
+  "total_time_seconds": 90.17,
+  "avg_seconds_per_claim": 9.017,
+  "audit_stats": {
+    "es": {
+      "total": 10,
+      "numeric_mismatches": 2,
+      "negation_mismatches": 0,
+      "failures": 0
+    },
+    "hi": {
+      "total": 10,
+      "numeric_mismatches": 2,
+      "negation_mismatches": 5,
+      "failures": 0
+    }
+  }
+}

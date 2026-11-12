@@ -1,0 +1,33 @@
+{
+  "model": "MoritzLaurer/mDeBERTa-v3-base-mnli-xnli",
+  "model_type": "deberta-v2",
+  "parameters": 278811651,
+  "device": "cpu",
+  "id2label": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+  },
+  "nli_to_scifact_mapping": {
+    "entailment": "SUPPORTS",
+    "neutral": "NOT_ENOUGH_INFO",
+    "contradiction": "REFUTES"
+  },
+  "claims_file": "C:\\Users\\akema\\.gemini\\antigravity\\scratch\\AITR_Lab02_mcl2026012_MultilingualSciFact\\data\\claims_dev.jsonl",
+  "total_claims_input": 20,
+  "total_prediction_pairs": 22,
+  "correct": 16,
+  "accuracy": 0.7273,
+  "errors": 0,
+  "skipped_no_evidence": 0,
+  "predicted_label_distribution": {
+    "SUPPORTS": 6,
+    "REFUTES": 6,
+    "NOT_ENOUGH_INFO": 10,
+    "UNMAPPED": 0
+  },
+  "use_gold_rationale": true,
+  "elapsed_seconds": 76.16,
+  "output_file": "results/baseline_predictions_smoke.csv",
+  "timestamp": "2026-11-04T11:34:04.694586+00:00"
+}

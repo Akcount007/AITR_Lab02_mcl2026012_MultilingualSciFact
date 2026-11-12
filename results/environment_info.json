@@ -1,0 +1,110 @@
+{
+  "timestamp": "2026-11-04T11:16:41",
+  "platform": {
+    "os": "Windows-11-10.0.26300-SP0",
+    "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+    "architecture": "AMD64",
+    "processor": "Intel64 Family 6 Model 154 Stepping 3, GenuineIntel"
+  },
+  "ram": {
+    "total_gb": 7.63,
+    "available_gb": 0.69,
+    "used_gb": 6.94,
+    "load_percent": 90
+  },
+  "gpu_hardware": {
+    "detected": true,
+    "count": 1,
+    "gpus": [
+      {
+        "name": "NVIDIA GeForce RTX 3050 Laptop GPU",
+        "total_vram_mib": 4096.0,
+        "free_vram_mib": 3964.0,
+        "driver_version": "572.47"
+      }
+    ]
+  },
+  "pytorch": {
+    "installed": true,
+    "version": "2.4.0+cpu",
+    "cuda_available": false,
+    "cuda_version_torch": null,
+    "device_count": 0,
+    "device_name": null
+  },
+  "libraries": {
+    "numpy": {
+      "available": true,
+      "version": "1.26.4"
+    },
+    "scipy": {
+      "available": true,
+      "version": "1.14.1"
+    },
+    "pandas": {
+      "available": true,
+      "version": "2.2.2"
+    },
+    "sklearn": {
+      "available": true,
+      "version": "1.5.1"
+    },
+    "matplotlib": {
+      "available": true,
+      "version": "3.9.2"
+    },
+    "seaborn": {
+      "available": true,
+      "version": "0.13.2"
+    },
+    "transformers": {
+      "available": true,
+      "version": "4.45.2"
+    },
+    "accelerate": {
+      "available": true,
+      "version": "1.15.0"
+    },
+    "datasets": {
+      "available": true,
+      "version": "2.21.0"
+    },
+    "evaluate": {
+      "available": true,
+      "version": "0.4.6"
+    },
+    "sacrebleu": {
+      "available": true,
+      "version": "2.6.0"
+    },
+    "sentencepiece": {
+      "available": true,
+      "version": "0.2.2"
+    }
+  },
+  "sanity_tests": {
+    "tensor_ops": {
+      "status": "PASS",
+      "device_used": "cpu",
+      "output_shape": [
+        10,
+        10
+      ],
+      "sample_value": 10.0
+    },
+    "sklearn_metrics": {
+      "status": "PASS",
+      "calculated_macro_f1": 0.5
+    },
+    "sacrebleu_metric": {
+      "status": "PASS",
+      "sample_chrf_score": 61.33
+    },
+    "scifact_data_loader": {
+      "status": "PASS",
+      "loaded_claims_count": 300,
+      "sample_parsed_evidence_count": 7
+    }
+  },
+  "verdict": "PASS"
+}

@@ -1,0 +1,38 @@
+{
+  "experiment_name": "multilingual_scientific_claim_verification",
+  "model_name_or_path": "Qwen/Qwen2.5-0.5B-Instruct",
+  "num_parameters": "494M",
+  "precision": "float32",
+  "device": "cpu",
+  "task": "scientific_fact_checking",
+  "benchmark_source": "SciFact Dev (claims_dev.jsonl)",
+  "corpus_source": "SciFact Corpus (corpus.jsonl)",
+  "languages": ["en", "es", "hi"],
+  "modes": {
+    "Mode A": "Direct Veracity Classification (Unsegmented abstract)",
+    "Mode B": "Evidence-Grounded Classification (Numbered sentence rationale selection)"
+  },
+  "decoding_parameters": {
+    "temperature": 0.0,
+    "do_sample": false,
+    "top_p": 1.0,
+    "max_new_tokens": 35,
+    "seed": 42
+  },
+  "translation_engines": {
+    "es": "Helsinki-NLP/opus-mt-en-es",
+    "hi": "Helsinki-NLP/opus-mt-en-hi"
+  },
+  "parsing_strategy": "two_pass_native_json_with_regex_fallback",
+  "strict_penalty_rule": "INVALID_OUTPUT assigned confidence 0.0, penalized as incorrect in denominator",
+  "metrics": [
+    "accuracy",
+    "macro_f1",
+    "strict_rationale_f1",
+    "cross_lingual_flip_rate",
+    "cohen_kappa",
+    "expected_calibration_error",
+    "brier_score",
+    "latency_per_example"
+  ]
+}

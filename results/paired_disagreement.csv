@@ -1,0 +1,10 @@
+comparison_type,pair_name,condition_fixed,total_pairs,disagreement_count,disagreement_rate,agreement_rate,cohens_kappa
+cross_lingual,en_vs_es,Mode_A,4,0,0.0,1.0,1.0
+cross_lingual,en_vs_hi,Mode_A,4,0,0.0,1.0,1.0
+cross_lingual,es_vs_hi,Mode_A,4,0,0.0,1.0,1.0
+cross_lingual,en_vs_es,Mode_B,4,0,0.0,1.0,1.0
+cross_lingual,en_vs_hi,Mode_B,4,0,0.0,1.0,1.0
+cross_lingual,es_vs_hi,Mode_B,4,0,0.0,1.0,1.0
+cross_prompt,Mode_A_vs_Mode_B,lang_en,4,1,0.25,0.75,0.0
+cross_prompt,Mode_A_vs_Mode_B,lang_es,4,1,0.25,0.75,0.0
+cross_prompt,Mode_A_vs_Mode_B,lang_hi,4,1,0.25,0.75,0.0

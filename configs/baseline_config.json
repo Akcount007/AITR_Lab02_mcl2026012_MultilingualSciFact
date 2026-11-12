@@ -1,0 +1,22 @@
+{
+  "experiment_name": "scifact_nli_baseline",
+  "model_name_or_path": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+  "task": "scientific_claim_verification",
+  "dataset": "SciFact",
+  "split": "dev",
+  "max_seq_length": 512,
+  "batch_size": 8,
+  "device": "cpu",
+  "seed": 42,
+  "label_mapping": {
+    "0": "SUPPORTS",
+    "1": "NOT_ENOUGH_INFO",
+    "2": "REFUTES"
+  },
+  "raw_id2label": {
+    "0": "entailment",
+    "1": "neutral",
+    "2": "contradiction"
+  },
+  "canonical_classes": ["SUPPORTS", "REFUTES", "NOT_ENOUGH_INFO"]
+}
